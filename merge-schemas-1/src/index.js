@@ -1,4 +1,4 @@
-const { makeExecutableSchema, mergeSchemas } = require('graphql-tools')
+const { mergeSchemas } = require('graphql-tools')
 const { GraphQLSchema, graphql } = require('graphql')
 const { schemaA, schemaB } = require('./schemas')
 

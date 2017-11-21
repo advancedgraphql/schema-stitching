@@ -1,16 +1,6 @@
 const { makeExecutableSchema, mergeSchemas } = require('graphql-tools')
 const { GraphQLSchema, graphql } = require('graphql')
-const { schemaA } = require('./schemas')
-
-const additionalTypeDefs = `
-  type Query {
-    message: Message
-  }
-
-  type Message {
-    text: String
-  }
-`
+const { schemaA, additionalTypeDefs } = require('./schemas')
 
 const mergedSchema = mergeSchemas({
   schemas: [schemaA, additionalTypeDefs],

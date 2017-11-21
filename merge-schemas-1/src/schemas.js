@@ -19,7 +19,7 @@ const makeSchemaB = () => {
   type Query {
     goodbye: String
   }
-  
+
   type Mutation {
     launchMissiles: Boolean
   }`
